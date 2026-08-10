@@ -8,32 +8,115 @@ box-sizing: border-box;
 
 
 }
- body-container{
- background-color: rgb(181, 248, 248);
+
+html{
+ font-family:Verdana, Geneva, Tahoma, sans-serif ; 
+}
+
+
+.container{
+    background-color: rgb(139, 192, 192);
+    width: 300px;
+    height: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+   
+}
+
+
+
+
+
+ .body-container{
+    background-color: rgb(181, 248, 248);
 
 
  }
 
+
 .header-container{
-
-width: 100%;
-height: 100px;
-
-background-color: rgb(183, 255, 255);
-/* :padding-top: 10px; */
-text-align: center;
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(183, 255, 255);
+   
 }
 
 .header-container a {
-    display: inline-block;
+    display: inline-block;  
     background-color: rgb(127, 223, 223);
     margin-left: 10px;
-     margin-top: 10px; 
+    margin-top: 10px; 
     font-size: x-large;
     text-decoration:  none;
-    padding: 5px;
+    padding: 5px; 
+    border-radius: 10px; 
+     
     
+    
+}
+/* Pseudo classe  que identifica a posição do cursor do mouse*/
+.header-container a:hover{
+    
+    background-color: rgb(72, 168, 168);
+    border: 2px solid rgb(82, 146, 148);
+    color: #fff;
+
+
+}
+
+ .Logo{
+    display: flex;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(41, 107, 107);
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+
+ }
+ 
+ .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+ }
+
+.section01{
+    display: none;
+    width:400px ;
+    height:  200px; 
+    margin: 10px auto;
+    padding-left: 20px;
+    color: aliceblue;
+    background-color:rgb(116, 245, 245) ;
+    border: rgb(0, 238, 255) dashed 3px;
+    
+
+}
+
+
+.section01--title{
+
+    margin-bottom: 10px;
+
 
 
 
 }
+
+
+ .Link-lista{
+ 
+ font-size: medium;
+ line-height: 30px;
+
+
+ }
+/* Display none: Não aparece na tels
+Display inline: elementos são em linhas e não aceita altura e largura (ocupa apenas o seu espaço)
+Display block: elementos são um abaixo do outro e aceita altura e largura (ocupa a linha inteira) 
+Display in-line block: elemetos em linha + altura e largura*/
