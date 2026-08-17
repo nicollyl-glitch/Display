@@ -1,0 +1,91 @@
+/* reset */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+/* Estilizar a TAG Body */
+body{
+    background-color: rgb(244, 247, 255);
+    width: 100vw;
+    height: 100vh;
+    
+}
+.content-header {
+    width: 100%;
+    height: 380px;
+    background-color: rgb(192, 192, 253);
+
+    display :flex ;
+    /* alinhar na vertical */
+    align-items: center;
+    /* alinhar na horizontal */
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+.banner-header{
+    width: 1440px;
+    height: 380px;
+    background-color: rgb(143, 143, 240);
+
+}
+
+.content-main{
+   
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilizar um elemnto através da classe */
+
+
+
+.hero-content{
+    border: 2px solid;
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+
+}
+/* Porpriedades que são comum a todos os cards */
+.box{
+
+    width: 356px;
+    height: 482px;
+    border-radius: 12px;
+    
+}
+
+.hero-content--left{
+    
+    background-color: rgb(164, 164, 252);
+   
+    
+}
+
+.hero-content--center{
+
+    background-color:rgb(123, 123, 243) ;
+    
+
+}
+
+.hero-content--right{
+
+    background-color: rgb(84, 84, 247);
+    
+}
+
+
