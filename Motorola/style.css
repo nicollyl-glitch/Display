@@ -15,8 +15,8 @@ box-sizing: border-box;
     
     
 }
-
-.main-container_left{
+.main.container{}
+.img-container_left{
     
     
   width: 100px;
@@ -34,9 +34,9 @@ box-sizing: border-box;
 
 .text2{
 
-    text-align:right;
+   
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(116, 193, 255);
+    color: rgb(91, 150, 226);
 
 
 }
