@@ -9,21 +9,23 @@ box-sizing: border-box;
 
 }
 
-/* Criando uma variavel */
+/* Criando uma variavel (podemos criar variaveis para qualquer coisa*/
 :root{ 
 
-    --bg-color-container: #2c2c2c;
-    --banana: blanchedalmond;
-    
+    --bg-color-container: #b90101;
+    --banana: rgb(144, 124, 219);
+    --fonte-padrao: Arial;
+    --border-header-container:2px solid red;
+
 }
 
 html{
- font-family:Verdana, Geneva, Tahoma, sans-serif ; 
+ font-family:var(--fonte-padrao) ; 
 }
 
 
 .container{
-    background-color: rgb(139, 192, 192);
+    background-color: var(--bg-color-container);
     width: 300px;
     height: 300px;
     font-family: 'Courier New', Courier, monospace;
@@ -36,7 +38,7 @@ html{
 
 
  .body-container{
-    background-color: rgb(181, 248, 248);
+    background-color: var(--banana);
 
 
  }
