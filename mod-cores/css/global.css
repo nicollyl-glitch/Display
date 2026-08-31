@@ -57,62 +57,129 @@
     border-radius: 6px;
     text-align: center;
     /* Efeito no momento em que o mouse é posicionado */
-    transition:  all 0.2 ease-in-out;
+    transition:  all 0.2s ease-in-out;
 
 
 }
 
-.color-section--active{
+.color-section_link--active{
+
+    color: var(--ui-link-active-text);
+    background-color: var(--ui-link-active-bg) ;
+
+    box-shadow: 0 1px 6px rgba(244, 244,248, 0.25);
+
+}
 
 
-    }
 
-.color-section--active:hover{}
+.color-section_link--active:hover{
+
+    transform:  scale(1.05);
+}
+
+.color-section_link:not(.color-section_link--active):hover{
+    color: var(--ui-text-title);
+    background-color: var(--ui-link-hover-bg);
 
 
+}
+
+.color-section__bar{
+    flex-grow: 1;
+    height: 100%;
+    transition: transform 0.25s ease;
+
+}
+
+.color-section__bar:hover{
+    transform: scaleX(1.02);
+    z-index: 10;
+    box-shadow: 0 0 30px rgba(51,50,50,0.3);
+
+}
+
+.color-section__bar--p{
+
+    
+}
+/* cores rgb */
 .color-section__bar--rgb-1{
-    color: var(--color-rgb-1) ;
+   background-color: var(--color-rgb-1) ;
 }
 .color-section__bar--rgb-2{
-    color: var(--color-rgb-2);
+    background-color: var(--color-rgb-2);
 }
 .color-section__bar--rgb-3{
-    color: var(--color-rgb-3);
+    background-color:  var(--color-rgb-3);
 
 }
 .color-section__bar--rgb-4{
 
-    color: var(--color-rgb-4);
+    background-color:  var(--color-rgb-4);
 }
 .color-section__bar--rgb-5{
-    color: var(--color-rgb-5);
+    background-color:  var(--color-rgb-5);
 
 }
 
 .color-section__bar--rgb-6{
-    color: var(--color-rgb-6);
+    background-color:  var(--color-rgb-6);
 }
 
 
+/* cores cmyk */
+.color-section__bar--cmyk-1{
+    background-color: var(--color-cmyk-1);
+}
+.color-section__bar--cmyk-2{
+    background-color: var(--color-cmyk-2);
+}
+.color-section__bar--cmyk-3{
+    background-color: var(--color-cmyk-3);
+}
+.color-section__bar--cmyk-4{
+    background-color: var(--color-cmyk-4);
+}
+.color-section__bar--cmyk-5{
+    background-color: var(--color-cmyk-5);
+}
 
-.color-section__bar--cmyk-1{}
-.color-section__bar--cmyk-2{}
-.color-section__bar--cmyk-3{}
-.color-section__bar--cmyk-4{}
-.color-section__bar--cmyk-5{}
+.color-section__bar--cmyk-6{
+    background-color: var(--color-cmyk-6);
 
-.color-section__bar--netflix-1{}
-.color-section__bar--netflix-2{}
-.color-section__bar--netflix-3{}
-.color-section__bar--netflix-4{}
-.color-section__bar--netflix-5{}
+}
 
+/* cores instagram */
+.color-section__bar--instagram-1{
+    background-color: var(--color-instagram-1);
+}
+.color-section__bar--instagram-2{
+    background-color: var(--color-instagram-2);
+}
+.color-section__bar--instagram-3{
+    background-color: var(--color-instagram-3);
+}
+.color-section__bar--instagram-4{
+    background-color: var(--color-instagram-4);
+}
+.color-section__bar--instagram-5{
+    background-color: var(--color-instagram-5);
+}
 
-.color-section__bar--google-1{}
-.color-section__bar--google-2{}
-.color-section__bar--google-3{}
-.color-section__bar--google-4{}
-.color-section__bar--google-5{}
+/* cores google */
+.color-section__bar--google-1{
+    background-color:var(--color-google-1) ;}
+.color-section__bar--google-2{
+    background-color:var(--color-google-2) ;
+}
+.color-section__bar--google-3{
+    background-color: var(--color-google-3);
+}
+.color-section__bar--google-4{
+    background-color:var(--color-google-4) ;
+}
+
 
 
 
