@@ -9,6 +9,14 @@ box-sizing: border-box;
 
 }
 
+/* Criando uma variavel */
+:root{ 
+
+    --bg-color-container: #2c2c2c;
+    --banana: blanchedalmond;
+    
+}
+
 html{
  font-family:Verdana, Geneva, Tahoma, sans-serif ; 
 }

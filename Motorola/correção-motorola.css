@@ -1,0 +1,71 @@
+
+
+.main-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+
+.main-container sup{
+    font-size: 10px;
+    color: rgb(59, 192, 192);
+}
+
+.main-container_left img{
+
+    width: 300px;
+    /* Qaundo eu coloco altura na imagem, a largura é automatica (proporção) */
+    height: 450px;
+
+
+
+}
+
+.main-container_rigth{
+
+    width: 650px;
+    height: 450px;
+
+}
+
+.main-container_rigth--title{
+
+    display: flex;
+    height: 150px;
+
+}
+
+
+.main-container_rigth--subtitle{
+
+    color: aqua;
+    margin-top: 5px;
+}
+
+.main-container_rigth--batery{
+
+    height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.main-container_rigth--batery h2{
+
+    margin-bottom: 15px;
+}
+
+
+.main-container_rigth--charge{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}

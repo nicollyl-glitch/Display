@@ -7,7 +7,7 @@
 box-sizing: border-box;
 }
 .body-container{
-    display: flex; 
+   
     background-color: rgb(244, 247, 255);
     width: 100vw;
     height: 100vh; 
@@ -16,7 +16,7 @@ box-sizing: border-box;
     
 }
 .main-container{
-    
+    display: flex;
     width: auto;
     height: auto;
     display: flex;
