@@ -52,3 +52,50 @@
     justify-content: center;
     margin-bottom: 15px;
 }
+
+.brand-card__image span{
+
+    color: rgb(100, 20, 20);
+ }
+
+ .brand-card__title{
+
+    font-size:  20px;
+    font-weight: 700;
+
+
+ }
+
+ .brand-card__description{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(110, 107, 107);
+    font-size: 16px;
+    line-height: 1.6;
+    /* tamanho máximo (0...400px) */
+    max-width: 400px;
+    height: 80px;
+
+
+
+
+ }
+
+
+ .brand-card__button{
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color:  transparent;
+    border: 1px solid #777;
+    color: #333;
+    cursor: pointer;
+    
+
+
+ }
+
+ .brand-card__button:hover{
+    background-color: #555;
+    color: rgb(250, 255, 255);
+
+
+ }
