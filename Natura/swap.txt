@@ -1,0 +1,18 @@
+<section class = "brands">
+        <header class = "brands__title">Conheça nossas marcas</header>
+        <div class= "brands_grid"></div>
+
+        <article class = "brand-card-kaiak"></article>
+
+        <div class = brand-card__image></div>
+        <div class = brand-card__title></div>
+        <div class="brand-card__description"></div>
+        <div class="brand-card__button"></div>
+       
+
+
+
+
+
+        
+    </section>
