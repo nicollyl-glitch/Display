@@ -48,7 +48,7 @@ html{
     display: flex;
     width: 100vw;
     height: 100px;
-    background-color: rgb(183, 255, 255);
+    /* background-color: rgb(183, 255, 255); */
    
 }
 
@@ -68,8 +68,8 @@ html{
 /* Pseudo classe  que identifica a posição do cursor do mouse*/
 .header-container a:hover{
     
-    background-color: rgb(72, 168, 168);
-    border: 2px solid rgb(82, 146, 148);
+    background-color: rgb(134, 99, 175);
+    border: 2px solid rgb(118, 82, 148);
     color: #fff;
 
 
@@ -79,7 +79,7 @@ html{
     display: flex;
     width: 500px;
     height: 100px;
-    background-color: rgb(41, 107, 107);
+    background-color: rgb(83, 41, 107);
     color: #fff;
     align-items: center;
     justify-content: center;
@@ -92,7 +92,7 @@ html{
     justify-content: center;
     width: 100%;
     height: 100px;
-    background-color: aqua;
+    background-color: rgb(106, 65, 145);
  }
 
 .section01{
@@ -102,8 +102,8 @@ html{
     margin: 10px auto;
     padding-left: 20px;
     color: aliceblue;
-    background-color:rgb(116, 245, 245) ;
-    border: rgb(0, 238, 255) dashed 3px;
+    background-color:rgb(217, 159, 250) ;
+    border: rgb(182, 114, 238) dashed 3px;
     
 
 }
@@ -114,15 +114,13 @@ html{
     margin-bottom: 10px;
 
 
-
-
 }
 
 
- .Link-lista{
+.Link-lista{
  
  font-size: medium;
- line-height: 30px;
+ line-height: 30px; 
 
 
  }
@@ -130,3 +128,26 @@ html{
 Display inline: elementos são em linhas e não aceita altura e largura (ocupa apenas o seu espaço)
 Display block: elementos são um abaixo do outro e aceita altura e largura (ocupa a linha inteira) 
 Display in-line block: elemetos em linha + altura e largura*/
+
+.sumario details{
+
+    border: 2px solid;
+    width: 50%;
+    margin-left: 25px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.sumario summary{
+    background-color: rgb(205, 183, 224);
+    color: #fff;
+    height: 40px;
+}
+
+
+.sumario p{
+    color: rrgb(168, 101, 231);
+    background-color: rgb(221, 190, 250);
+    line-height: 40px;
+
+}
