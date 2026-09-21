@@ -1,5 +1,6 @@
 @import url(./reset.css);
 @import url(./design-system.css);
+@import url(./colors-bars.css);
 
 
 
@@ -10,7 +11,7 @@
 
 }
 
-.color-section_sidebar{
+.color-section__sidebar{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +21,7 @@
     border-right: 1px solid var(--ui-border);
 }
 
-.color-section_title{
+.color-section__title{
     color: var(--ui-text-title);
     font-size: 20px;
     /* peso da fonte: NÃO UTILIZADO PX */
@@ -40,14 +41,14 @@
 
 
 
-.color-section_menu{
+.color-section__menu{
     display: flex;
     flex-direction: column;
     gap: 12px ;
 
 }
 
-.color-section_link{
+.color-section__link{
     color: var(--ui-text-link);
     text-decoration: none;
     font-size: 14px;
@@ -62,7 +63,7 @@
 
 }
 
-.color-section_link--active{
+.color-section__link--active{
 
     color: var(--ui-link-active-text);
     background-color: var(--ui-link-active-bg) ;
@@ -99,87 +100,87 @@
 
 }
 
-/* .color-section__bar--p{
-    
+.color-section__content{
+    display: flex;
+    flex-direction:  column;
+    flex-grow: 1;
+    height: 100vh;
 
-} */
-/* cores rgb */
-.color-section__bar--rgb-1{
-   background-color: var(--color-rgb-1) ;
-}
-.color-section__bar--rgb-2{
-    background-color: var(--color-rgb-2);
-}
-.color-section__bar--rgb-3{
-    background-color:  var(--color-rgb-3);
+} 
 
-}
-.color-section__bar--rgb-4{
-
-    background-color:  var(--color-rgb-4);
-}
-.color-section__bar--rgb-5{
-    background-color:  var(--color-rgb-5);
-
-}
-
-.color-section__bar--rgb-6{
-    background-color:  var(--color-rgb-6);
-}
+.color-section__palette{
+    display: flex;
+    height: 43vh;
+    width: 100%;
 
 
-/* cores cmyk */
-.color-section__bar--cmyk-1{
-    background-color: var(--color-cmyk-1);
+
 }
-.color-section__bar--cmyk-2{
-    background-color: var(--color-cmyk-2);
-}
-.color-section__bar--cmyk-3{
-    background-color: var(--color-cmyk-3);
-}
-.color-section__bar--cmyk-4{
-    background-color: var(--color-cmyk-4);
-}
-.color-section__bar--cmyk-5{
-    background-color: var(--color-cmyk-5);
+.color-section__faq{
+    flex-grow: 1;
+    background-color: var(--faq-bg);
+    padding: 35px 40px;
+    border-top:  1px solid var(--ui-border);
+    display: flex;
+    flex-direction: column;
 }
 
-.color-section__bar--cmyk-6{
-    background-color: var(--color-cmyk-6);
+.color-section__faq-title{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--faq-text-title);
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
 
 }
 
-/* cores instagram */
-.color-section__bar--instagram-1{
-    background-color: var(--color-instagram-1);
-}
-.color-section__bar--instagram-2{
-    background-color: var(--color-instagram-2);
-}
-.color-section__bar--instagram-3{
-    background-color: var(--color-instagram-3);
-}
-.color-section__bar--instagram-4{
-    background-color: var(--color-instagram-4);
-}
-.color-section__bar--instagram-5{
-    background-color: var(--color-instagram-5);
+.color-section__faq-item{
+    background-color:  var(--faq-card-bg);
+    border:  1px solid var(--faq-border);
+    border-radius: 10px;
+    padding:  18px 22px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
-/* cores google */
-.color-section__bar--google-1{
-    background-color:var(--color-google-1) ;}
-.color-section__bar--google-2{
-    background-color:var(--color-google-2) ;
+.color-section__faq-item:hover,
+.color-section__faq-item[open]{
+    background-color: var(--faq-card-hover-bg);
+    border-color:  var(--faq-border-neon);
+    box-shadow: 0 0 8px var(--faq-border-neon), 0 0 20px rgba(157,38,239,0.3);
+    transform: translate(-2px);
+
+
+
 }
-.color-section__bar--google-3{
-    background-color: var(--color-google-3);
+
+.color-section__faq-question{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--faq-text-question);
+    cursor: pointer;
+
+    /* Troca e ícone via CSS puro
+    Esconde a seta padrão nos navegadores padrão */
+
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.2s ease;
+
 }
-.color-section__bar--google-4{
-    background-color:var(--color-google-4) ;
+/* Remove a seta nativa no safari e navegadores webkit */
+.color-section__faq-question::-webkit-details-marker {
+
+    display: none;
 }
 
 
+.color-section__faq-question::after{
+    content: "";
+    font-size: 16px;
+    color: var(--faq-border);
+}
 
 

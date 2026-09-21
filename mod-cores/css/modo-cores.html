@@ -13,47 +13,99 @@
 
     <!-- Divisão 1 e 7: menu lateral -->
 
-    <aside class = "color-section_sidebar">
-        <h2 class="color-section_title">Modelo RGB</h2>
-        <nav class = "color-section_menu">
-            <a href="#rgb" class = " color-section_link color-section_link--active">RGB</a>
-            <a href="#cmyk" class = "color-section_link">CMYK</a>
-            <a href="#instagram" class="color-section_link">Instagram</a>
-            <a href="#google" class = "color-section_link">Google</a>
+    <aside class = "color-section__sidebar">
+        <h2 class="color-section__title">Modelo RGB</h2>
+        <nav class = "color-section__menu">
+            <a href="#rgb" class = " color-section__link color-section_link--active">RGB</a>
+            <a href="#cmyk" class = "color-section__link">CMYK</a>
+            <a href="#instagram" class="color-section__link">Instagram</a>
+            <a href="#google" class = "color-section__link">Google</a>
 
 
              
         </nav>
     </aside>
     <!-- .color-section__bar.color-section__bar--rgb-$*6  ($ para conta 1,2,3...)-->
-     <div class="color-section__bar color-section__bar--rgb-1">rgb(255, 0, 0)</div>
-     <div class="color-section__bar color-section__bar--rgb-2">rgb(0, 255, 0)</div>
-     <div class="color-section__bar color-section__bar--rgb-3">rgb(0, 0, 255)</div>
-     <div class="color-section__bar color-section__bar--rgb-4">>rgb(255, 255, 0)</div>
-     <div class="color-section__bar color-section__bar--rgb-5">rgb(0, 255, 255)</div>
-     <div class="color-section__bar color-section__bar--rgb-6">rgb(255, 0, 255)</div>
+     <div class="color-section__content">
+         <section class="color-section__palette"aria-label="Visualização da Paleta RGB">
+             <div class="color-section__bar color-section__bar--rgb-1">rgb(255, 0, 0)</div>
+             <div class="color-section__bar color-section__bar--rgb-2">rgb(0, 255, 0)</div>
+             <div class="color-section__bar color-section__bar--rgb-3">rgb(0, 0, 255)</div>
+             <div class="color-section__bar color-section__bar--rgb-4">>rgb(255, 255, 0)</div>
+             <div class="color-section__bar color-section__bar--rgb-5">rgb(0, 255, 255)</div>
+             <div class="color-section__bar color-section__bar--rgb-6">rgb(255, 0, 255)</div>
+         </section>
+        
+        <section class="color-section__faq" aria-labelledby="faq-rgb-title">
+            <h3 id = "faq-rgb-title" class="color-section__faq-title" >Perguntas Frequentes sobre RGB</h3>
+
+        
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">O que significa a sigla RGB?</summary>
+                <p class="color-section__faq-answer">Red, Green, Blue (Vermelho, Verde e Azul).</p>
+
+            </details>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">Qual é a representação numérica (valores RGB) para a cor Preta?</summary>
+                <p class="color-section__faq-answer">(0, 0, 0).</p>
+
+            </details>
+
+            <details class="color-section__faq-item">
+                <summary class="color-section__faq-question">O modelo RGB é aditivo ou subtrativo?</summary>
+                <p class="color-section__faq-answer">É um modelo aditivo (as cores somam-se adicionando luz).</p>
+
+            </details>
+        </section>
+        
+
+     </div>
 
      
     </section>
 
 
         <section id="cmyk" class = "color-section">
-            <aside class = "color-section_sidebar">
-            <h2 class="color-section_title">Modelo CMYK </h2>
-            <nav class = "color-section_menu">
-                <a href="#rgb" class = "color-section_link ">RGB</a>
-                <a href="#cmyk" class = "color-section_link color-section_link--active">CMYK</a>
-                <a href="#instagram" class="color-section_link">Instagram</a>
-                <a href="#google" class = "color-section_link">Google</a> 
+            <aside class = "color-section__sidebar">
+            <h2 class="color-section__title">Modelo CMYK</h2>
+            <nav class = "color-section__menu">
+                <a href="#rgb" class = "color-section__link ">RGB</a>
+                <a href="#cmyk" class = "color-section__link color-section_link--active">CMYK</a>
+                <a href="#instagram" class="color-section__link">Instagram</a>
+                <a href="#google" class = "color-section__link">Google</a> 
             </nav>
                 </aside>
 
-        <div class="color-section__bar color-section__bar--cmyk-1"></div>
-        <div class="color-section__bar color-section__bar--cmyk-2"></div>
-        <div class="color-section__bar color-section__bar--cmyk-3"></div>
-        <div class="color-section__bar color-section__bar--cmyk-4"></div>
-        <div class="color-section__bar color-section__bar--cmyk-5"></div>
-        <div class="color-section__bar color-section__bar--cmyk-6"></div>
+        <div class="color-section__content">
+            <section class="color-section__palette" aria-label="Visualização paleta CMYK">
+                <div class="color-section__bar color-section__bar--cmyk-1"></div>
+                <div class="color-section__bar color-section__bar--cmyk-2"></div>
+                <div class="color-section__bar color-section__bar--cmyk-3"></div>
+                <div class="color-section__bar color-section__bar--cmyk-4"></div>
+                <div class="color-section__bar color-section__bar--cmyk-5"></div>
+                <div class="color-section__bar color-section__bar--cmyk-6"></div>
+            </section>
+
+            <section class="color-section__faq-item" aria-labelledby="faq-cmyk-title">
+                <h3 id = "faq-cmyk-title" class="color-section__faq-title" >Perguntas Frequentes sobre CMYK</h3>
+            
+
+                <details class="color-section__faq-item">
+                    <summary>O que significa a sigla CMYK?</summary>
+                    <p>Cyan (Ciano), Magenta, Yellow (Amarelo) e Key / Black (Preto).</p>
+                </details>
+                <details class="color-section__faq-item">
+                    <summary>O modelo CMYK é aditivo ou subtrativo?</summary>
+                    <p>É um modelo subtrativo (quanto mais tinta é adicionada, mais luz é absorvida e mais escura fica a cor).</p>
+                </details>
+                <details class="color-section__faq-item">
+                    <summary>Onde o modelo CMYK é predominantemente utilizado?</summary>
+                    <p>Em impressões gráficas (jornais, revistas, cartões, embalagens e impressoras domésticas).</p>
+                </details>
+            </section>
+        </div>
         </section>
         
 
@@ -61,23 +113,50 @@
 
     <!-- Divisão 1 e 7: menu lateral -->
 
-    <aside class = "color-section_sidebar">
-        <h2 class="color-section_title">Modelo Instagram</h2>
-        <nav class = "color-section_menu">
-            <a href="#rgb" class = " color-section_link">RGB</a>
-            <a href="#cmyk" class = "color-section_link">CMYK</a>
-            <a href="#instagram" class="color-section_link color-section_link--active">Instagram</a>
-             <a href="#google" class = "color-section_link">Google</a>
+    <aside class = "color-section__sidebar">
+        <h2 class="color-section__title">Modelo Instagram</h2>
+        <nav class = "color-section__menu">
+            <a href="#rgb" class = " color-section__link">RGB</a>
+            <a href="#cmyk" class = "color-section__link">CMYK</a>
+            <a href="#instagram" class="color-section__link color-section_link--active">Instagram</a>
+             <a href="#google" class = "color-section__link">Google</a>
 
             </nav>
                 </aside>
         
-        <div class="color-section__bar color-section__bar--instagram-1"></div>
-        <div class="color-section__bar color-section__bar--instagram-2"></div>
-        <div class="color-section__bar color-section__bar--instagram-3"></div>
-        <div class="color-section__bar color-section__bar--instagram-4"></div>
-        <div class="color-section__bar color-section__bar--instagram-5"></div>
-        
+        <div class="color-section__content">
+            <section class="color-section__palette"aria-label = "Visualização da Paleta instagram">
+                <div class="color-section__bar color-section__bar--instagram-1"></div>
+                <div class="color-section__bar color-section__bar--instagram-2"></div>
+                <div class="color-section__bar color-section__bar--instagram-3"></div>
+                <div class="color-section__bar color-section__bar--instagram-4"></div>
+                <div class="color-section__bar color-section__bar--instagram-5"></div>
+            </section>
+
+            <section class="color-section__faq" aria-labelledby="faq-instagram-title">
+                <h3 id = "faq-rgb-title" class="color-section__faq-title">Peguntas Frequentes sobre as cores do instagram</h3>
+            
+
+
+                <details class="color-section__faq-item">
+                <summary class="color-section__faq-question"> O gradiente de cores do Instagram utiliza o modelo RGB ou CMYK no ambiente digital?
+                </summary>
+                <p class="color-section__faq-answer">Modelo RGB (por ser exibido em ecrãs digitais). </p>
+
+            </details>
+
+            <details class="color-section__faq-item">
+                <summary>Na versão de "Modo Escuro" (Dark Mode) da aplicação, qual é a cor de fundo da interface?</summary>
+                <p>Na versão de "Modo Escuro" (Dark Mode) da aplicação, qual é a cor de fundo da interface?</p>
+            </details>
+
+            <details class="color-section__faq-item">
+                <summary>Por que razão o Instagram utiliza cores tão quentes e saturadas na sua marca?</summary>
+                <p>Para transmitir energia, criatividade, calor e dinamismo visual.</p>
+            </details>
+        </section>
+            
+        </div>
         </section>
 
 
@@ -85,21 +164,46 @@
 
     <!-- Divisão 1 e 7: menu lateral -->
 
-    <aside class = "color-section_sidebar">
-        <h2 class="color-section_title">Modelo Google</h2>
-        <nav class = "color-section_menu">
-            <a href="#rgb" class = " color-section_link">RGB</a>
-            <a href="#cmyk" class = "color-section_link">CMYK</a>
-            <a href="#instagram" class="color-section_link">Instagram</a>
-            <a href="#google" class = "color-section_link color-section_link--active">Google</a>
+    <aside class = "color-section__sidebar">
+        <h2 class="color-section__title">Modelo Google</h2>
+        <nav class = "color-section__menu">
+            <a href="#rgb" class = " color-section__link">RGB</a>
+            <a href="#cmyk" class = "color-section__link">CMYK</a>
+            <a href="#instagram" class="color-section__link">Instagram</a>
+            <a href="#google" class = "color-section__link color-section_link--active">Google</a>
         </nav>
     </aside>
         
-        <div class="color-section__bar color-section__bar--google-1"></div>
-        <div class="color-section__bar color-section__bar--google-2"></div>
-        <div class="color-section__bar color-section__bar--google-3"></div>
-        <div class="color-section__bar color-section__bar--google-4"></div>
-        
+        <div class="color-section__content">
+            <section class="color-section__palette" aria-label ="Visualizaçaõ da paleta Google">
+                <div class="color-section__bar color-section__bar--google-1"></div>
+                <div class="color-section__bar color-section__bar--google-2"></div>
+                <div class="color-section__bar color-section__bar--google-3"></div>
+                <div class="color-section__bar color-section__bar--google-4"></div>
+            </section>
+            
+            <section class="color-section__faq" aria-labelledby="faq-google-title">
+                <h3 id = faq-google-title class="color-section__faq-title">Perguntas Frequentes Google</h3>
+            
+
+            <details class="color-section__faq-item">
+               
+                <summary>De que cor é a primeira letra ("G") no logótipo clássico e na marca atual da Google?</summary>
+                <p>Azul.</p>
+            </details>
+
+
+            <details class="color-section__faq-item">
+                <summary>Qual é a única cor secundária/quebra de padrão no logótipo (presente na letra "l")?</summary>
+                <p>Verde (as outras cores seguem um padrão de cores primárias, mas o verde quebra a ordem para mostrar que a Google "não segue todas as regras").</p>
+            </details>
+            <details class="color-section__faq-item">
+
+                <summary>Quantas cores tem o ícone do motor de busca "G" minimalista da Google?</summary>
+                <p>Quatro (está dividido em 4 segmentos com Azul, Vermelho, Amarelo e Verde).</p>
+            </details>
+            
+        </div>
         </section>
         
      
