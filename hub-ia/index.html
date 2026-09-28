@@ -8,34 +8,147 @@
     <style>
 
         /* Base style for mobile devices */
-    body {
+    body{
+        padding: 20px;
         background-color: olive;
         color: white;
-        }
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+        text-align: center;
+    }
 
-    /* For devices with a minimum width of 768px (Medium) */
-    @media screen and (min-width: 768px) {
-        body {
-            background-color: blue;
-            color: white;
-        }
-        }
-
-    /* For devices with a minimum width of 992px (Large) */
-    @media screen and (min-width: 992px) {
-        body {
-            background-color: tan;
-            color: black;
-        }
-        }
+    .container{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap; 
+        margin-bottom: 15px;
+       
         
+       /* classe que esta presente na section  */
+    }
+    .box{
+        
+        max-width: 400px;
+        height: 200px;
+        background-color: rgb(77, 6, 6);
+       
+    }
 
+
+    .container-position{
+        margin-top: 15px;
+        width: 100%;
+        height: 600px;
+        border: 2px solid rgb(245, 233, 233);
+        position: relative;
+    }
+
+    .filho-tamanho{
+        position: absolute;
+        margin-top: 15px;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(236, 164, 164);
+    }
+    .filho01__container-position{
+        top: 0;
+        left: 0;
+
+    }
+
+
+    .filho02__container-position{
+        top: 0;
+        right: 0;
+
+
+    }
+
+    .filho03__container-position{
+        bottom: 0;
+        left: 0;
+        
+    }
+
+
+    .filho04__container-position{
+
+        bottom: 50%;
+        right: 50%;
+        flex: auto;
+    }
+
+    .whats{
+
+        width: 75px;
+        height: 75px;
+        background-color: rgb(247, 96, 96);
+        border-radius:  50%;
+        border: 5px solid white;
+        position: fixed;
+        bottom: 100px;
+        right: 60px;
+
+    }
+
+    .whats img{
+        width: 75px;
+        height: 75px;
+
+
+    }
+
+
+    @media (min-width: 768px) {
+        body {background-color: rgb(178, 211, 240);
+            color: rgb(76, 184, 235);
+        .box{
+            width: 45%;
+            max-width: 600px;
+
+
+        } 
+     }}
+
+    @media (min-width: 992px){
+        body{
+            background-color: rgb(133, 2, 2);
+            color: rgb(250, 179, 179);
+
+        .box{
+
+            width: 300px;
+            
+        }
+
+    
+    }}
+        
     </style>
     
     
 </head>
 <body>
-    <h1>Este é teste de midia</h1>
+    <h1>Este é teste de @media</h1>
+    <section class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+
+    <div class="container-position">
+        <div class="filho01__container-position filho-tamanho"></div>
+        <div class="filho02__container-position filho-tamanho"></div>
+        <div class="filho03__container-position filho-tamanho"></div>
+        <div class="filho04__container-position filho-tamanho"></div>
+    </div>
     
+    <div class="whats">
+
+        <img src="./img/logo-whatsapp.png" alt="logo-whatsapp">
+    </div>
 </body>
 </html>
