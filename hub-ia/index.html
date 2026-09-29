@@ -4,151 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hub-ia</title>
-
-    <style>
-
-        /* Base style for mobile devices */
-    body{
-        padding: 20px;
-        background-color: olive;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    h1{
-        text-align: center;
-    }
-
-    .container{
-        display: flex;
-        gap: 15px;
-        justify-content: center;
-        flex-wrap: wrap; 
-        margin-bottom: 15px;
-       
-        
-       /* classe que esta presente na section  */
-    }
-    .box{
-        
-        max-width: 400px;
-        height: 200px;
-        background-color: rgb(77, 6, 6);
-       
-    }
-
-
-    .container-position{
-        margin-top: 15px;
-        width: 100%;
-        height: 600px;
-        border: 2px solid rgb(245, 233, 233);
-        position: relative;
-    }
-
-    .filho-tamanho{
-        position: absolute;
-        margin-top: 15px;
-        width: 200px;
-        height: 200px;
-        background-color: rgb(236, 164, 164);
-    }
-    .filho01__container-position{
-        top: 0;
-        left: 0;
-
-    }
-
-
-    .filho02__container-position{
-        top: 0;
-        right: 0;
-
-
-    }
-
-    .filho03__container-position{
-        bottom: 0;
-        left: 0;
-        
-    }
-
-
-    .filho04__container-position{
-
-        bottom: 50%;
-        right: 50%;
-        flex: auto;
-    }
-
-    .whats{
-
-        width: 75px;
-        height: 75px;
-        background-color: rgb(247, 96, 96);
-        border-radius:  50%;
-        border: 5px solid white;
-        position: fixed;
-        bottom: 100px;
-        right: 60px;
-
-    }
-
-    .whats img{
-        width: 75px;
-        height: 75px;
-
-
-    }
-
-
-    @media (min-width: 768px) {
-        body {background-color: rgb(178, 211, 240);
-            color: rgb(76, 184, 235);
-        .box{
-            width: 45%;
-            max-width: 600px;
-
-
-        } 
-     }}
-
-    @media (min-width: 992px){
-        body{
-            background-color: rgb(133, 2, 2);
-            color: rgb(250, 179, 179);
-
-        .box{
-
-            width: 300px;
-            
-        }
-
-    
-    }}
-        
-    </style>
-    
-    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
-    <h1>Este é teste de @media</h1>
-    <section class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </section>
+    <header class="header">
+        <div class="header__brand">
+            <h1 class="header__title">Hub<mark>IA</mark></h1>
+        </div>
 
-    <div class="container-position">
-        <div class="filho01__container-position filho-tamanho"></div>
-        <div class="filho02__container-position filho-tamanho"></div>
-        <div class="filho03__container-position filho-tamanho"></div>
-        <div class="filho04__container-position filho-tamanho"></div>
-    </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"> <a href="#vision" class="nav__link">Visão Computacional</a>>/li>
+                <li class="nav__item"><a href="#npl" class="nav__link">pln</a></li>
+                <li class="nav__item"> <a href="#generative" class="nav__link">IA Generativa</a></li>
+                <li class="nav__item"> <a href="#predictive" class="nav__link">IA Preditiva</a></li>
+                <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="vision" class="section-ia">
+            <div class="section-ia__container">
+
+                <article class="section-ia__content">
+                    <h2 class="section-ia__title">1. Visão Computacional</h2>
+                    <p class="section-ia__text">A Visão Computacional permite que os sistemas <strong>extraiam informações estruturadas de imagens e vídeos.</strong> O modelo identifica objetos, padrões biométricos e falhas industriais em tempo real com alta precisão.
+                    </p>
+                    <p class="section-ia__text">
+                        <em>Exemplo de aplicação</em>Diagnóstico médico automatizado analisando radiografias para identificar anomalias precocemente.
+                    </p>
+
+                </article>
+
+                <aside class="section-ia__aside">
+                    <div class="card-image">
+                        <img src="https://placehold.co/500x300/e2e8f0/0284c7?text=Visao+Computacional+500x300" alt="500x300">
+                    </div>
+
+                </aside>
+            </div>
+        </section>
+
+        <section id="pln" class=section-ia section-ia--reverse>
+            <div class="section-ia__container">
+
+                <article class="section-ia__content">
+                    <h2 class="section-ia__title">2. Processamento de Linguagem Natural (PLN)</h2>
+                    <p class="section-ia__text">Sistemas de PLN capacitam máquinas a compreender, interpretar e gerar linguagem humana. Através da análise contextual, a IA capta intenções e sentimentos nas conversas.</p>
+                    <p class="section-ia__text">
+                        <em>Exemplo de aplicação</em>Atendimento ao cliente via assistentes virtuais capazes de resolver problemas complexos com respostas fluidas.</p>
+
+                </article>
+
+                <aside class="section-ia__aside">
+                    <div class="card-image">
+                        <img src="https://placehold.co/500x300/e2e8f0/0d9488?text=PLN+Linguagem+500x300">
+
+                </aside>
+            </div>
+        
+        </section>
+
+        <section id="generative" class=section-ia></section>
+        <section id="predictive" class="section-ia section-ia--reverse"></section>
+        <section id="faq" class="faq"></section>
+
+    </main>
+    <footer class="footer"></footer>
     
-    <div class="whats">
-
-        <img src="./img/logo-whatsapp.png" alt="logo-whatsapp">
-    </div>
 </body>
 </html>

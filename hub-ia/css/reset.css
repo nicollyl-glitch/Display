@@ -1,12 +1,54 @@
 *{ margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 html{
     /*  */
-    scroll-behavior: smooth;
+     scroll-behavior: smooth; /*efeito de uma seção para a otra */
     /* tudo colocado na página mesmo que esteja maior a barra de rolagem não é ativada */
-    overflow-x: hidden;
+    font-family: var(--font-main);
+    background-color: var(--color-bg-body);
+    color: var(--color-text-main);
+    
 }
+
+
+body{
+    padding-top:var(--header-height) ;
+    padding-bottom: var(--footer-height);
+    line-height: 1.6;
+
+
+}
+
+ul, ol{
+
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+    /* Header as cores do pai */
+    color: inherit;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+
+mark{
+
+    background-color: var(--color-highlight);
+    padding: 2px 6px ;
+    border-radius: 4px;
+}
+
+
